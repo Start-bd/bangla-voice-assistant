@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: bangla-voice-assistant
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: SONIOX_API_KEY
+        sync: false
+      - key: OPENAI_API_KEY
+        sync: false
